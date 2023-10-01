@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch || perfect timing with us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="container mx-auto flex justify-center  ">
+    <div class="mt-20 bg-cyan-500 w-4/6 py-10 rounded-2xl"> <!-- TIMe -->
+        <div class="flex space-x-3 text justify-center items-baseline text-yellow-300">
+            <p class="text-7xl font-semibold mainPoint " id="hours">00</p>
+            <p class="font-thin text-sm">Hours</p>
+            <p class="text-7xl font-semibold mainPoint" id="minute">00</p>
+            <p>minutes</p>
+            <p class="text-7xl font-semibold mainPoint" id="second">00</p>
+            <p>seconds</p>
+            <p class="text-7xl font-semibold mainPoint" id="miliSecond">00</p>
+            <p>mili secs</p>
+        </div>
+        <!-- button -->
+        <div class="flex space-x-36 justify-center mt-32">
+            <button onclick="timer()" id="start-btn" class="bg-green-500 p-5 rounded-lg text-white">start</button>
+            <button onclick="stop()" id="stop-btn"  class="bg-red-500 p-5 rounded-lg  text-green-500">stop</button>
+            <button onclick="reset()" id="reset-btn" class="bg-yellow-500 p-5 rounded-lg text-white">reset</button>
+        </div>
+    </div>
+
+
+
+
+    <!-- Script -->
+    <script src="timer.js"></script>
+</body>
+
+</html>
